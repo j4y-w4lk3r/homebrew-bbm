@@ -5,21 +5,21 @@
 class Bbm < Formula
   desc "Backblaze B2 manager: focused CLI for the bu encrypted-bundle workflow (S3-compatible, Wasabi/R2-ready)"
   homepage "https://github.com/j4y-w4lk3r/bbm"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/j4y-w4lk3r/bbm/releases/download/v0.1.1/bbm_0.1.1_Darwin_x86_64.tar.gz"
-      sha256 "42ed9dd0cb0ec8058af85305e9077cf799b4e560a43bbf59cb7b46f4c7f17a3b"
+      url "https://github.com/j4y-w4lk3r/bbm/releases/download/v0.1.2/bbm_0.1.2_Darwin_x86_64.tar.gz"
+      sha256 "f02383c35ebdb89e9fd492394dec7ec59819ce54a5ace746719a2700f6830312"
 
       define_method(:install) do
         bin.install "bbm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/j4y-w4lk3r/bbm/releases/download/v0.1.1/bbm_0.1.1_Darwin_arm64.tar.gz"
-      sha256 "ad80f3fa720d1f711aebb80637450e93b98d8636d520762dc0cd36798ccdbf9a"
+      url "https://github.com/j4y-w4lk3r/bbm/releases/download/v0.1.2/bbm_0.1.2_Darwin_arm64.tar.gz"
+      sha256 "07c0260f091a8e28361f08c00c3b752e19351081571162f861b05567c8017798"
 
       define_method(:install) do
         bin.install "bbm"
@@ -29,15 +29,15 @@ class Bbm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/j4y-w4lk3r/bbm/releases/download/v0.1.1/bbm_0.1.1_Linux_x86_64.tar.gz"
-      sha256 "a40d10c0964f8dde095c5c9e9c4a9dea73c41051369b02b2fdb6c3d843f9490a"
+      url "https://github.com/j4y-w4lk3r/bbm/releases/download/v0.1.2/bbm_0.1.2_Linux_x86_64.tar.gz"
+      sha256 "b49ecafdf375796e81fd8e3ad3e77a501be6cfbe15bc3d1ce86cbc84de7ede52"
       define_method(:install) do
         bin.install "bbm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/j4y-w4lk3r/bbm/releases/download/v0.1.1/bbm_0.1.1_Linux_arm64.tar.gz"
-      sha256 "24c8836278c482c0bdff294d38f5befbd4ae39dc590b59f17c49f98071b16d48"
+      url "https://github.com/j4y-w4lk3r/bbm/releases/download/v0.1.2/bbm_0.1.2_Linux_arm64.tar.gz"
+      sha256 "00b15f5816c949ec319b5eabd00ea0b03ddf98fae78973d2a1e229080afcb014"
       define_method(:install) do
         bin.install "bbm"
       end
